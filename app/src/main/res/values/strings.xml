@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MercedesHack</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string-array name="cabin_colors">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Teal</item>
+        <item>Off</item>
+    </string-array>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rohan.mercedeshack.CabinActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/interior_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cabin Settings"
+            android:textSize="36dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AC Temp"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/decrease_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="24sp"
+                    android:onClick="decreaseTemp"/>
+                <TextView
+                    android:id="@+id/ac_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="16\u00B0C"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"/>
+                <Button
+                    android:id="@+id/increment_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:onClick="increaseTemp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cabin Color"
+                android:layout_marginBottom="8dp"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/red_cabin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Red"
+                        android:buttonTint="@android:color/holo_red_light"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/blue_cabin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"
+                        android:buttonTint="@android:color/holo_blue_dark"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/green_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Green"
+                        android:buttonTint="@android:color/holo_green_light"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/aqua_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aqua"
+                        android:buttonTint="@android:color/holo_blue_bright"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/amber_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amber"
+                        android:buttonTint="@android:color/holo_orange_light"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <RadioButton
+                        android:id="@+id/off_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Off"
+                        android:buttonTint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                android:background="@android:color/darker_gray"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return to Home"
+                android:onClick="goHome"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
